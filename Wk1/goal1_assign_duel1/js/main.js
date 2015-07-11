@@ -22,7 +22,7 @@ Assignment: Goal 1: Analyze Duel #1
     var playerOneHealth = 100;
     var playerTwoHealth = 100;
 
-    var round = 1;
+    var round = 0;
 
     function fight() {
         console.log('in the fight function');
@@ -50,12 +50,20 @@ Assignment: Goal 1: Analyze Duel #1
             var results = winnerCheck();
             console.log(results);
 
+            if(results ==='no winner'){
+                round++;
+                alert(playerOneName+':'+playerOneHealth+' *ROUND '+round+' OVER* '+playerTwoName+':'+playerTwoHealth);
+            }else{
+                alert(results);
+                break;
+            };
+
         };
     };
 
 
     function winnerCheck(){
-        console.log('in winnerCheck FN');
+        //console.log('in winnerCheck FN');
 
 
         var result='no winner';
