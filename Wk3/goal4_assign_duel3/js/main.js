@@ -38,7 +38,7 @@ Assignment: Goal 2: Develop Duel #2
 
 
 
-    // Varaible that will keep track of rounds
+    // Variable that will keep track of rounds
     var round = 1;
 
     //Starts DOM innerHTML txt for top of page
@@ -105,7 +105,7 @@ Assignment: Goal 2: Develop Duel #2
                 //alert(playerOne[0]+':'+playerOne[1]+' *ROUND '+round+' OVER* '+playerTwo[0]+':'+playerTwo[2]);
 
                 fighter1_txt.innerHTML = fighters[0].name + ":   " + fighters[0].health;
-                fighter1_txt.innerHTML = fighters[1].name + ":   " + fighters[1].health;
+                fighter2_txt.innerHTML = fighters[1].name + ":   " + fighters[1].health;
 
             }else{
                 //if there is a winner or a tie, displays result and stops code
@@ -138,12 +138,12 @@ Assignment: Goal 2: Develop Duel #2
             //Changed to Array item (Health)
         }else if(fighters[0].health <1){
             //Changed to Array item (Name)
-            result = fighters[1].name+' WINS!!!'
+            result = fighters[1].name+' WINS!!!';
         // if players do not tie, and player two is below 1 health, player 1 wins
             //Changed to Array item (Health)
         }else if(fighters[1].health <1){
             //Changed to Array item (Name)
-            result=fighters[0].name+ ' WINS!!!'
+            result=fighters[0].name+ ' WINS!!!';
         };
         // function will get sent the information and check the outcome and finish code if one of the above is met
         return result;
@@ -152,7 +152,7 @@ Assignment: Goal 2: Develop Duel #2
 
 
     /* Where program gets started */
-    console.log("program starts")
+    console.log("program starts");
     // calls function to start program
     fight();
 
