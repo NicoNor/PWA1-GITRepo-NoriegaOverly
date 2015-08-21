@@ -154,23 +154,6 @@ Assignment: Goal 2: Develop Duel #2
     /* Where program gets started */
     console.log("program starts");
     // calls function to start program
-    fight();
+    //fight();
 
 })();
-
-/*
-Pseudocode:
-
-set player one and two names, health, and damage
-set rounds
-set minimum damage
-set damage to randomize between base damage and a minimum damage
-
-once duel begins players will be dealt damage
- after each round, check for results
- display results to user after each round
-if a player reaches 0 health before the other, he loses
-if players both reach 0 health at the same time, it is a tie
-
-
- */
