@@ -1,6 +1,6 @@
 /*
 Name: Nicholas Noriega Overly
-Date: 07/18/2015
+Date: 08/21/2015
 Assignment: Goal 2: Develop Duel #2
  */
 
