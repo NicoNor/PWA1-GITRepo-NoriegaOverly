@@ -68,7 +68,7 @@
 		results.sort();
 		
 		// Check that matches were found, and run output functions
-		if(results.length == 0){ //8.Logical Error: One equal was used *FIXED*
+		if(results.length === 0){ //8.Logical Error: One equal was used *FIXED*
 			noMatch();
 		}else{
 			showMatches(results);
