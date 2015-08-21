@@ -49,16 +49,16 @@
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
 			var dbTitleEnd = db[i].indexOf('|');
-			var dbitem = db[i].toLowerCase().substring(0, dbTitleEnd);//New Error: Camel Casing (tolowercase now toLowerCase)
+			var dbItem = db[i].toLowerCase().substring(0, dbTitleEnd);//New Error: Camel Casing (tolowercase now toLowerCase)
 
 			// loop through the user's search query words
 			// save a lowercase variable of the search keyword
 			for (var ii = 0, jj = queryArray.length; ii < jj; ii++) {
-				var qitem = queryArray[ii].toLowerCase();//New Error: Camel Casing (tolowercase)
+				var qItem = queryArray[ii].toLowerCase();//New Error: Camel Casing (tolowercase)
 
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
-				var compare = dbitem.indexOf(qitem);
+				var compare = dbItem.indexOf(qItem);
 				if (compare !== -1) {
 					results.push(db[i]);
 				};
